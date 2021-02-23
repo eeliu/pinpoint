@@ -11,9 +11,9 @@ serviceTypes:
       name: 'PYTHON_REMOTE_METHOD'
       property:
           recordStatistics: true
+
     - code: 1702
       name: 'CELERY'
-    - code: 1703
-      name: 'CELERY-WORKER'
       property:
-           recordStatistics: true
+        queue: true
+        recordStatistics: true
