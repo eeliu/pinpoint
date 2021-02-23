@@ -138,6 +138,7 @@ public class TraceService {
 
                 // update the span information of the current node (self)
                 statisticsService.updateCallee(span.getApplicationId(), applicationServiceType, span.getApplicationId(), ServiceType.USER, span.getAgentId(), span.getElapsed(), isError);
+                logger.warn("is a queue {},application id {}",spanServiceType.isQueue(),span.getApplicationId());
             }
             bugCheck++;
         }
